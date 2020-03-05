@@ -1,7 +1,7 @@
 # Computation distributed in pollutant measurements of the National Air Quality Information System
 
 #### Introduction
-In this project we will use distributed computing to work with open data on contaminant measurements and air quality information. The API we will work with contains a list of geographic information stations where pollutant measurements are obtained. These data are updated every hour.
+In this project we will use distributed computing to work with open data on contaminant measurements and air quality information. The API contains a list of geographic information stations where pollutant measurements are obtained. These data are updated every hour.
 The API is created and shared openly by INECC, which is the national institute for ecology and climate change.
 
 #### Bibliography and references
