@@ -1,0 +1,10 @@
+     these requirements are the tools we work with and
+    if you want to work with our project you need to have them.
+        
+        requirements :
+                -Python3
+                -Lighttpd-1.4.55.tar.gz (server)
+                -Library Matplotlib
+                -Library json
+                -Library numpy
+                -Library request
