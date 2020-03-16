@@ -5,9 +5,9 @@
 ### How to run the program
 - Before running the program make sure you have the necessary requirements, clone the repository and run the program in your terminal.
 
-   > git clone https://github.com/Skadoosh-mxkn/Measurement-of-pollutants-and-air-quality.git
+   >- git clone https://github.com/Skadoosh-mxkn/Measurement-of-pollutants-and-air-quality.git
    
-   > access the save folder and run the program "testJson.py"-
+   >- access the save folder and run the program "testJson.py"
    
 
 ### Definition of the project
