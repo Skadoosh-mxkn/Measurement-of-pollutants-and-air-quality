@@ -1,6 +1,9 @@
 ![0056a0b4ea2ac7a (1)](https://user-images.githubusercontent.com/38228291/76676594-6bd05700-65c5-11ea-8fc0-7490022b1886.jpg)
 
 # Computation distributed in pollutant measurements of the National Air Quality Information System
+#### Authors
+- Juan Luis Ruiz Vanegas
+- Andres Soto Millan
 
 ### How to run the program
 - Before running the program make sure you have the necessary requirements, clone the repository and run the program in your terminal.
@@ -9,6 +12,15 @@
    
    >- access the save folder and run the program "testJson.py"
    
+- You can install the web server like this:
+   >- Download the web server from http://www.lighttpd.net/
+   >- Install it:
+   >- ./configure build_fullstatic = yes --without-bzip2 --prefix = <install_directory>
+   >- make
+   >- make install
+   
+### Introduction
+This is a distributed computing project where the general objective is to process and analyze data from a specific data source and then display the resulting data on a web server.
 
 ### Definition of the project
 
@@ -29,7 +41,7 @@ The architecture of our system is structured in two main elements:
 (Connection test)
 ![Test Server](https://user-images.githubusercontent.com/38228291/76675975-6f60df80-65bf-11ea-846b-b1f3e46452c8.png)
 
-### Outcome of data analysis
+### Outcome and Conclusions
 
 The result we obtained by filtering the relevant data for our project and processing it to work with it were; The locations of the stations, the name of the city, the amount of pollutants, date of measurement and the value of pollutants on the scale. This information is represented on the IMECA scale and the following image is an impression of the analysis results.
 ![Test Data Acquisition](https://user-images.githubusercontent.com/38228291/76675986-88699080-65bf-11ea-883e-5aaca9077fc5.png)
@@ -40,3 +52,14 @@ The result we obtained by filtering the relevant data for our project and proces
 - [Webserver](http://www.lighttpd.net/)
 - [Logo](https://www.redbubble.com/es/shop/yin+yang+del+drag%C3%B3n+stickers)
 - [Pip package](https://pypi.org/project/pip/)
+
+### License
+
+the license we use in this project is the **"GNU General Public License v3.0"**
+
+### Contact information
+
+If you like to contact us you can do it through our emails
+
+- Juan Luis Ruiz Vanegas ----> juanluisruiz971@gmail.com
+- Andres Soto Millan ----> hoblam500@gmail.com
