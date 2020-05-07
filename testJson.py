@@ -1,3 +1,8 @@
+"""
+License Attribution-NonCommercial 4.0 International
+
+"""
+
 import json
 import requests
 from datetime import datetime
@@ -111,30 +116,22 @@ for i in range (totalRegistros):
 #print(( vectorDatosEstaciones[99][0]).keys() ) #dict_keys(['indexes', 'measurements', 'location', 'source_id', 'name', 'id'])
 
 
-"""
+
 print(vectorName)
 print(vectorMeasurementsValue)
 print(vectorMeasurementsUnit)
 print(vectorMeasurementsPollutant)
-print(vectorIndexesTiempo)
+#print(vectorIndexesTiempo)
 print(vectorSource_id)
-
-print(len(vectorName))
-print(len(vectorMeasurementsValue))
-print(len(vectorMeasurementsPollutant))
-print(len(vectorMeasurementsUnit))
-print(len(vectorIndexesTiempo))
-print(len(vectorSource_id))
-"""
 
 
 """Convertir el tiempo"""
 #2016-03-11T21:15:01.000Z
-timeVector = []
-for item in vectorIndexesTiempo:
-    timeVector.append( datetime.strptime(item, '%Y-%m-%dT%H:%M:%S.%fZ') )
+#timeVector = []
+#for item in vectorIndexesTiempo:
+    #timeVector.append( datetime.strptime(item, '%Y-%m-%dT%H:%M:%S.%fZ') )
     
-print(timeVector)
+#print(timeVector)
 
 """
 for item in data:
