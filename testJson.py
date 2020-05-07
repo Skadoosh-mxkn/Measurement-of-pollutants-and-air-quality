@@ -66,8 +66,32 @@ for i in range(totalRegistros):
     
     id = (vectorDatosEstaciones[i][0]).get('id')
     vectorId.append(id)
-#print (vectorIndexes[-1])
 
+
+########vectorMeasurements########
+#[{'averagedOverInHours': '24', 'time': '2016-03-11T21:15:01.000Z', 'value': '0.0017125', 'unit': 'ppm', 'pollutant': 'SO2'}]
+##De aqui queremos el valor, la unidad y el contaminante
+vectorMeasurementsValue = []
+vectorMeasurementsUnit = []
+vectorMeasurementsPollutant = []
+for elemento in vectorMeasurements:
+    if (elemento == []):
+        vectorMeasurementsValue.append("0")
+        vectorMeasurementsUnit.append("ppm")
+        vectorMeasurementsPollutant.append("SO2")
+    
+    else:
+        value = (vectorMeasurements[i][0].get('value')) 
+        vectorMeasurementsValue.append(value)
+        
+        unit = (vectorMeasurements[i][0].get('unit')) 
+        vectorMeasurementsUnit.append(unit)
+        
+        pollutant = (vectorMeasurements[i][0].get('pollutant')) 
+        vectorMeasurementsPollutant.append(pollutant)
+        
+        
+        
 ######## vectorIndexes ###########
 #[{'calculationTime': '2016-03-11T21:15:01.000Z', 'responsiblePollutant': '', 'value': '1', 'scale': 'IMECA'}]
 vectorIndexesTiempo = []
@@ -82,16 +106,32 @@ for i in range (totalRegistros):
     
     value = (vectorIndexes [i][0].get('value'))
     vectorIndexesValue.append(value)
-#print (vectorIndexesValue)
+
 
 #print(( vectorDatosEstaciones[99][0]).keys() ) #dict_keys(['indexes', 'measurements', 'location', 'source_id', 'name', 'id'])
+
+
+"""
+print(vectorName)
+print(vectorMeasurementsValue)
+print(vectorMeasurementsUnit)
+print(vectorMeasurementsPollutant)
+print(vectorIndexesTiempo)
+print(vectorSource_id)
+
+print(len(vectorName))
+print(len(vectorMeasurementsValue))
+print(len(vectorMeasurementsPollutant))
+print(len(vectorMeasurementsUnit))
+print(len(vectorIndexesTiempo))
+print(len(vectorSource_id))
+"""
 
 
 """Convertir el tiempo"""
 #2016-03-11T21:15:01.000Z
 timeVector = []
 for item in vectorIndexesTiempo:
-    print (item)
     timeVector.append( datetime.strptime(item, '%Y-%m-%dT%H:%M:%S.%fZ') )
     
 print(timeVector)
