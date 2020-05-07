@@ -121,7 +121,6 @@ print(vectorName)
 print(vectorMeasurementsValue)
 print(vectorMeasurementsUnit)
 print(vectorMeasurementsPollutant)
-#print(vectorIndexesTiempo)
 print(vectorSource_id)
 
 
