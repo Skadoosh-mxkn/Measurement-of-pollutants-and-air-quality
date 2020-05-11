@@ -117,10 +117,7 @@ for i in range (totalRegistros):
     value = (vectorIndexes [i][0].get('value'))
     vectorIndexesValue.append(value)
 
-
 #print(( vectorDatosEstaciones[99][0]).keys() ) #dict_keys(['indexes', 'measurements', 'location', 'source_id', 'name', 'id'])
-
-
 
 print(vectorName)
 print(vectorMeasurementsValue)
