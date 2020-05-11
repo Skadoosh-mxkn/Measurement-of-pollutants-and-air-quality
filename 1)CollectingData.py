@@ -1,6 +1,7 @@
 """
 The license we use in this project is the "GNU General Public License v3.0"
 
+Juan Luis Ruiz Vanegas -> juanluisruiz971@gmail.com
 """
 
 import json
