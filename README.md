@@ -57,7 +57,6 @@ The architecture of our system is structured in two main elements:
 ### Outcome and Conclusions
 
 The result we obtained by filtering the relevant data for our project and processing it to work with it were; The locations of the stations, the name of the city, the amount of pollutants, date of measurement and the value of pollutants on a scale. This information is represented on the IMECA scale and the following image is an impression of the analysis results.
-![Test Data Acquisition](https://user-images.githubusercontent.com/38228291/76675986-88699080-65bf-11ea-883e-5aaca9077fc5.png)
 
 
 ### Bibliography
