@@ -25,7 +25,7 @@
 ### Introduction
 This is a distributed computing project where the general objective is to process and analyze data from a specific data source and then display the resulting data on a web server.
 
-### Definition of the project
+### Definition of the project 
 
 In this project, we use distributed computing to work with open data on pollutant measurements and information on air quality. The API contains a list of geographic information stations where pollutant statistics are found. These data are updated every hour. The API is created and openly shared by INECC, INSTITUTO NACIONAL DE ECOLOGÍA Y CAMBIO CLIMÁTICO. We also use a web server to show the result of the analysis of this data using distributed computing.
 
