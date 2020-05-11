@@ -2,9 +2,16 @@
     if you want to work with our project you need to have them.
         
         requirements :
-                -Python3
-                -Lighttpd-1.4.55.tar.gz (server)
+                -Python 3.7.5
                 -Library Matplotlib
                 -Library json
                 -Library numpy
                 -Library request
+		-Library datetime
+		-Library mysql
+		-Library glob
+		-Library subprocess
+
+                -Lighttpd
+		-mysql  Ver 8.0.20-0ubuntu0.19.10.1 for Linux on x86_64 ((Ubuntu))
+
