@@ -37,9 +37,17 @@ The objective of this project is to collect data in real time from the INSTITUTO
 The architecture of our system is structured in two main elements:
 
  - The program **"1)CollectingData.py"**:
->> This program written on Python 3.7.5 is where we work with our data source obtained from INECC (INSTITUTO NACIONAL DE ECOLOGÍA Y CAMBIO CLIMÁTICO). In general, what we do in this code is to take the data records of pollutant measurements obtained from the geographic information stations and make an analysis of these data to save them in directories that we will show on the server.
- - The program **"1)CollectingData.py"**:
->>
+>> This program written on Python 3.7.5 is where we work with our data source obtained from INECC (INSTITUTO NACIONAL DE ECOLOGÍA Y CAMBIO CLIMÁTICO). In general, what we do in this code is to take the data records of pollutant measurements obtained from the geographic information stations and make an analysis of these data to save them in directories that we will show on the server. This program creates a json file with the data processed.
+ - The program **"2)StoreDB.py"**:
+>> In this program, we open the json file, connect with the SQL Server and executing querys to store the data on a SQL table.
+- The program **"3)DataProcessing.py"**:
+>> Here we make querys to the SQL Server over about our table in order to get the information necessary to create graphics. Yo can change the path where are going to be saved.
+- Plots folder
+>>Here is an example of the graphic you can create.
+
+- Graphics folder
+>> Here are some graphics explaining more information about the project.
+
 - The server **Lighttpd**:
 >> The Lighttpd server is a secure web server, fast and adhering to certain standards, It is optimized for environments where speed is very important and therefore consumes less CPU and RAM than other servers. The way we work with this server was to download it to our computer and configure it, then we compile and execute it. The next thing was to start the server on port 3000 and activate the option to view files to upload the data directiorios obtained from the analysis of our data source to the server.
 
