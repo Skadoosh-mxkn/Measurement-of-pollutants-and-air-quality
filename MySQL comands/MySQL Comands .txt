@@ -1,0 +1,9 @@
+---------------------This comands are needed to create the table to work with the SQL Server---------------------
+
+
+create database MEASUREMENTS;
+use MEASUREMENTS;
+
+create table Measurements (Name varchar(50), MeasurementsValue float(10,7), MeasurementsUnit varchar(15), MeasurementsPollutant varchar(10), Source_id varchar(15));
+
+
