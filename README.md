@@ -20,7 +20,7 @@
    >- Install it:
    >- ./configure build_fullstatic = yes --without-bzip2 --prefix = <install_directory>
    >- make
-   >- make install
+   >- make install 
    
 ### Introduction
 This is a distributed computing project where the general objective is to process and analyze data from a specific data source and then display the resulting data on a web server.
