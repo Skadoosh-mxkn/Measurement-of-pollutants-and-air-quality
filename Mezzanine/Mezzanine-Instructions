@@ -1,0 +1,21 @@
+#----Creating a Mezzanine Project----#
+
+$pip3 install mezzanine
+$mezzanine-project <project name>
+  -Creates the project
+$cd <project name>
+$emacs setting.py
+        -Here, you can change some setting, like Regiom, Languaje or configure the database
+	       -You´re configuratin Mezzanine
+	-If you want a change, you have to configure local_settings.py too. local_settings.py file will be the main
+	configuration file, so, if you make a setting on settings.py and you don´t configure local_settings.py
+	the configuration would have no effect.
+$python3 manage.py createdb
+
+$python3 manage.pv collectstatic
+$python3 collecttemplates
+These lines ables Mezzanine Designer Mode
+
+$python3 manage.py runserver
+	 -Inicializate the server on the IP you added in previous step.
+	 	       -Default 127.0.0.1:8000 <-Localserver
