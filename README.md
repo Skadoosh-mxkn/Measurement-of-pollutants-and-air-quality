@@ -3,7 +3,7 @@
 # Computation distributed in pollutant measurements of the National Air Quality Information System
 #### Authors
 - Juan Luis Ruiz Vanegas
-- Andres Soto Millan
+- Paola González Hernández
 
 ### How to run the program
 - Before running the program make sure you have the necessary requirements, clone the repository and run the program in your terminal.
