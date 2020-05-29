@@ -74,4 +74,4 @@ the license we use in this project is the **"GNU General Public License v3.0"**
 If you like to contact us you can do it through our emails
 
 - Juan Luis Ruiz Vanegas ----> juanluisruiz971@gmail.com
-- Andres Soto Millan ----> hoblam500@gmail.com
+- Paola González Hernández ----> paaoogh@gmail.com
