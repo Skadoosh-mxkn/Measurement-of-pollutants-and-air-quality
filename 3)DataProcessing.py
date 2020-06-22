@@ -39,21 +39,22 @@ try:
     #| PM10                  |
     #+-----------------------+
     #
-    query = ("SELECT  DISTINCT (Name) FROM Measurements WHERE MeasurementsPollutant = 'CO' ORDER BY Name;")
+    query = ("SELECT  DISTINCT (Name) FROM Measurements  ORDER BY Name;")
+    #Seleccionar las estaciones
     cursor.execute(query)
     for ( Name) in cursor:
         vName.append(Name)
-        
     vNameQuery = []
     for i in range (len(vName)):
         vName.append(Name)
         vNameQuery.append(vName[i][0])
+
     for name in vNameQuery:
-        query = ("SELECT MAX(MeasurementsValue) as MeasurementsValue FROM Measurements WHERE Name = '%s'" % (name))
+        query = ("SELECT MAX(MeasurementsValue) as MeasurementsValue FROM Measurements WHERE MeasurementsPollutant = 'PM10'AND Name = '%s'" % (name))
         cursor.execute(query)
         for (MeasurementsValue) in cursor:
             vMeasurementsValue.append(MeasurementsValue)
-        
+    
 except mysql.connector.Error as err:
     if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print("Something is wrong with your username or password")
@@ -64,7 +65,7 @@ except mysql.connector.Error as err:
 else:
     cnx.close()
     cnx.close()
-    
+
     
 
 PATH='/home/luis/Documentos/UNAM/CuartoSemestre/ComputoDistribuido/Measurement-of-pollutants-and-air-quality/'
@@ -72,11 +73,14 @@ PATH='/home/luis/Documentos/UNAM/CuartoSemestre/ComputoDistribuido/Measurement-o
 fig, ax = plt.subplots()
 ax.plot(vNameQuery, vMeasurementsValue)
 
-ax.set(xlabel='Stations', ylabel='CO Levels',
-       title='CO Measurement Pollutant (ppm) ')
+ax.set(xlabel='Stations', ylabel='PM10 Levels',
+       title='PM10 Measurement Pollutant (ppm) ')
 ax.grid()
 plt.xticks(rotation='vertical')
 plt.grid(True)
-plt.savefig(PATH+'/Plots/'+today+'.png')
-plt.show()
+plt.margins(0.2)
+# Tweak spacing to prevent clipping of tick-labels
+plt.subplots_adjust(bottom=0.3)
 
+plt.savefig(PATH+'/Plots/'+today+'-PM10.png')
+#plt.show()
