@@ -3,7 +3,7 @@
 # Computation distributed in pollutant measurements of the National Air Quality Information System
 #### Authors
 - Juan Luis Ruiz Vanegas
-- Andres Soto Millan
+- Paola González Hernández
 
 ### How to run the program
 - Before running the program make sure you have the necessary requirements, clone the repository and run the program in your terminal.
@@ -74,4 +74,4 @@ the license we use in this project is the **"GNU General Public License v3.0"**
 If you like to contact us you can do it through our emails
 
 - Juan Luis Ruiz Vanegas ----> juanluisruiz971@gmail.com
-- Andres Soto Millan ----> hoblam500@gmail.com
+- Paola González Hernández ----> paaoogh@gmail.com
