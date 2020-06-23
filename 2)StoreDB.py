@@ -2,7 +2,10 @@
 The license we use in this project is the "GNU General Public License v3.0"
 
 Juan Luis Ruiz Vanegas -> juanluisruiz971@gmail.com
+Paola Gonzalez Hernandez -> paaoogh@gmail.com
+Maria Lucrecia Beltz Gonzalez -> lucreciabeltz@gmail.com
 """
+#Further libraries might be needed
 import mysql
 import mysql.connector
 from mysql.connector import errorcode
@@ -10,6 +13,7 @@ import json
 import glob
 import subprocess
 
+#Insertion query function with connector and cursor.
 def insertar (data_query):
     try:
         cnx=mysql.connector.connect(**config,auth_plugin='mysql_native_password')
