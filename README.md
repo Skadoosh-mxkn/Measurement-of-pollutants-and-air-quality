@@ -50,6 +50,11 @@ The architecture of our system is structured in two main elements:
 - Plotting folder
 >> Here are some plots explaining more information about the project.
 
+- Diagrams folder
+>>In case any questions about the structure of the system, there are five images that show the data flux process, a latency diagram, logical connections and classes information used. 
+- Mezzanine folder
+>>The original idea was to work with Mezzanine Django framework. Installation and basic information about is can be found within this folder.
+
 - The server **Lighttpd**:
 >> The Lighttpd server is a secure web server, fast and adhering to certain standards, it is optimized for environments where speed is very important and, therefore, consumes less CPU and RAM than other services. The process followed with this server was to download it to the personal computer and configure it, then compile and execute it. The next thing was to start the server on port 3000 and activate the option to view files and upload the data directories retrieved from the analysis of our data source to the server.
 
