@@ -36,7 +36,7 @@ In this project, we use distributed computing techinqes to work with open data o
 The objective of this project is to collect data in real time from the Instituto Nacional de Ecología y Cambio Climático to model air quality and the amount of pollutants from different stations in the country, we want this data to be exposed to interested people through a web server, that is, use distributed computing in our data collection model.
 
 ### General system architecture
-The architecture of our system is structured in two main elements:
+The architecture of our system is structured in main elements:
 
  - The program **"1)CollectingData.py"**:
 >> This program written on Python 3.7.5 is where we work with our data source obtained from INECC (Instituto Nacional de Ecología y Cambio Climático). In general, what we do in this code is to take the data records of pollutant measurements obtained from the geographic information stations and make an analysis of these data to save them in directories that we will show on the server. This program creates a json file with the data processed.
