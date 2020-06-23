@@ -1,12 +1,12 @@
 ![0056a0b4ea2ac7a (1)](https://user-images.githubusercontent.com/38228291/76676594-6bd05700-65c5-11ea-8fc0-7490022b1886.jpg)
 
 # Computation distributed in pollutant measurements of the National Air Quality Information System
-#### Authors
+#### Team collaborators
 - Juan Luis Ruiz Vanegas
 - Paola González Hernández
 - María Lucrecia Beltz González
 
-### How to run the program
+### How to's and about the program
 - Before running the program make sure you have the necessary requirements, clone the repository and run the program in your terminal.
 
    >- git clone https://github.com/Skadoosh-mxkn/Measurement-of-pollutants-and-air-quality.git
@@ -61,7 +61,7 @@ The architecture of our system is structured in two main elements:
 (Connection test)
 ![Test Server](https://user-images.githubusercontent.com/38228291/76675975-6f60df80-65bf-11ea-846b-b1f3e46452c8.png)
 
-### Outcome and Conclusions
+### Outcome and  conclusions
 
 The result we obtained by filtering the relevant data for our project and processing it to work with it were: locations of the stations, name of the cities, amount of pollutants, measurement dates and the pollutants values relative to a reference frame. This information is represented on the IMECA scale and the following image is an impression of the analysis results.
 
