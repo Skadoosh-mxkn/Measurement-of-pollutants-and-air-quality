@@ -4,6 +4,7 @@
 #### Authors
 - Juan Luis Ruiz Vanegas
 - Paola González Hernández
+- María Lucrecia Beltz González
 
 ### How to run the program
 - Before running the program make sure you have the necessary requirements, clone the repository and run the program in your terminal.
@@ -23,40 +24,41 @@
    >- make install 
    
 ### Introduction
-This is a distributed computing project where the general objective is to process and analyze data from a specific data source and then display the resulting data on a web server.
+
+This is a distributed computing project where the general objective is process and analyze data from a specific data source and then displaying the resulting on a web server. The main goal is to generate plottings that are comprehensible enough about the diverse pollutants that cover the atmosphere: sulfur dioxide, carbon monoxide, ozone and nitrogen dioxide. 
 
 ### Definition of the project 
 
-In this project, we use distributed computing to work with open data on pollutant measurements and information on air quality. The API contains a list of geographic information stations where pollutant statistics are found. These data are updated every hour. The API is created and openly shared by INECC, INSTITUTO NACIONAL DE ECOLOGÍA Y CAMBIO CLIMÁTICO. We also use a web server to show the result of the analysis of this data using distributed computing.
+In this project, we use distributed computing techinqes to work with open data on pollutant measurements and information on air quality. The API contains a list of geographic information retrieved hourly by strategical stations where pollutant statistics are found. The API is created and openly shared by INECC (*Instituto Nacional de Ecología y Cambio Climático*). We also use a web server to show the results of the analysis of this data using more techniques.
 
 ### Overall objective
 
-The objective of this project is to collect data in real time from the INSTITUTO NACIONAL DE ECOLOGÍA Y CAMBIO CLIMÁTICO to model air quality and the amount of pollutants from different stations in the country, we want these data to be exposed to interested people through a web server, that is, use distributed computing in our data collection model.
+The objective of this project is to collect data in real time from the Instituto Nacional de Ecología y Cambio Climático to model air quality and the amount of pollutants from different stations in the country, we want these data to be exposed to interested people through a web server, that is, use distributed computing in our data collection model.
 
 ### General system architecture
 The architecture of our system is structured in two main elements:
 
  - The program **"1)CollectingData.py"**:
->> This program written on Python 3.7.5 is where we work with our data source obtained from INECC (INSTITUTO NACIONAL DE ECOLOGÍA Y CAMBIO CLIMÁTICO). In general, what we do in this code is to take the data records of pollutant measurements obtained from the geographic information stations and make an analysis of these data to save them in directories that we will show on the server. This program creates a json file with the data processed.
+>> This program written on Python 3.7.5 is where we work with our data source obtained from INECC (Instituto Nacional de Ecología y Cambio Climático). In general, what we do in this code is to take the data records of pollutant measurements obtained from the geographic information stations and make an analysis of these data to save them in directories that we will show on the server. This program creates a json file with the data processed.
  - The program **"2)StoreDB.py"**:
->> In this program, we open the json file, connect with the SQL Server and executing querys to store the data on a SQL table.
+>> In this program, we open the json file, connect with the SQL Server and executing queries to store the data on a SQL table.
 - The program **"3)DataProcessing.py"**:
->> Here we make querys to the SQL Server over about our table in order to get the information necessary to create graphics. Yo can change the path where are going to be saved.
+>> Here we make queries to the SQL Server over our table in order to get the information necessary to create plottings. You can change the path where datum is going to be saved.
 - Plots folder
->>Here is an example of the graphic you can create.
+>>Here is an example of the plots you can create.
 
-- Graphics folder
->> Here are some graphics explaining more information about the project.
+- Plotting folder
+>> Here are some plots explaining more information about the project.
 
 - The server **Lighttpd**:
->> The Lighttpd server is a secure web server, fast and adhering to certain standards, It is optimized for environments where speed is very important and therefore consumes less CPU and RAM than other servers. The way we work with this server was to download it to our computer and configure it, then we compile and execute it. The next thing was to start the server on port 3000 and activate the option to view files to upload the data directiorios obtained from the analysis of our data source to the server.
+>> The Lighttpd server is a secure web server, fast and adhering to certain standards, it is optimized for environments where speed is very important and, therefore, consumes less CPU and RAM than other services. The process followed with this server was to download it to the personal computer and configure it, then compile and execute it. The next thing was to start the server on port 3000 and activate the option to view files and upload the data directories retrieved from the analysis of our data source to the server.
 
 (Connection test)
 ![Test Server](https://user-images.githubusercontent.com/38228291/76675975-6f60df80-65bf-11ea-846b-b1f3e46452c8.png)
 
 ### Outcome and Conclusions
 
-The result we obtained by filtering the relevant data for our project and processing it to work with it were; The locations of the stations, the name of the city, the amount of pollutants, date of measurement and the value of pollutants on a scale. This information is represented on the IMECA scale and the following image is an impression of the analysis results.
+The result we obtained by filtering the relevant data for our project and processing it to work with it were: locations of the stations, name of the cities, amount of pollutants, measurement dates and the pollutants values relative to a reference frame. This information is represented on the IMECA scale and the following image is an impression of the analysis results.
 
 
 ### Bibliography
@@ -67,11 +69,12 @@ The result we obtained by filtering the relevant data for our project and proces
 
 ### License
 
-the license we use in this project is the **"GNU General Public License v3.0"**
+ **"GNU General Public License v3.0"** was used in this project. More information about sharing and usage of this project within the file.
 
 ### Contact information
 
-If you like to contact us you can do it through our emails
+For further contacting and more questions, the following contacts are provided:
 
 - Juan Luis Ruiz Vanegas ----> juanluisruiz971@gmail.com
 - Paola González Hernández ----> paaoogh@gmail.com
+- María Lucrecia Beltz González ----> lucreciabeltz@gmail.com
