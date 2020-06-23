@@ -16,7 +16,7 @@
    >- Run the program "2)StoreDB.py". It will need credentials. In our case are in PATHDBCONNECTION, you will need USER, PASSWORD, HOST and DATABASE. You have to configure that requeriments on your SQLServer.
    >- Run the program "3)DataProcessing.py". You will need your credentials. You can change the Query to plot what you want.
    
-- You can install the web server like this:
+- Installation of the web server with the following commands:
    >- Download the web server from http://www.lighttpd.net/
    >- Install it:
    >- ./configure build_fullstatic = yes --without-bzip2 --prefix = <install_directory>
@@ -29,11 +29,11 @@ This is a distributed computing project where the general objective is process a
 
 ### Definition of the project 
 
-In this project, we use distributed computing techinqes to work with open data on pollutant measurements and information on air quality. The API contains a list of geographic information retrieved hourly by strategical stations where pollutant statistics are found. The API is created and openly shared by INECC (*Instituto Nacional de Ecología y Cambio Climático*). We also use a web server to show the results of the analysis of this data using more techniques.
+In this project, we use distributed computing techinqes to work with open data on pollutant measurements and information on air quality. The API contains a list of geographic information retrieved hourly by strategical stations where pollutant statistics are found. The API is created and openly shared by INECC (*Instituto Nacional de Ecología y Cambio Climático*). A web server was also used to show the results of the analysis of this data using more techniques.
 
 ### Overall objective
 
-The objective of this project is to collect data in real time from the Instituto Nacional de Ecología y Cambio Climático to model air quality and the amount of pollutants from different stations in the country, we want these data to be exposed to interested people through a web server, that is, use distributed computing in our data collection model.
+The objective of this project is to collect data in real time from the Instituto Nacional de Ecología y Cambio Climático to model air quality and the amount of pollutants from different stations in the country, we want this data to be exposed to interested people through a web server, that is, use distributed computing in our data collection model.
 
 ### General system architecture
 The architecture of our system is structured in two main elements:
