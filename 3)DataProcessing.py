@@ -2,6 +2,8 @@
 The license we use in this project is the "GNU General Public License v3.0"
 
 Juan Luis Ruiz Vanegas -> juanluisruiz971@gmail.com
+Paola Gonzalez Hernandez -> paaoogh@gmail.com
+Maria Lucrecia Beltz Gonzalez -> lucreciabeltz@gmail.com
 """
 
 import mysql.connector
@@ -40,7 +42,7 @@ try:
     #+-----------------------+
     #
     query = ("SELECT  DISTINCT (Name) FROM Measurements  ORDER BY Name;")
-    #Seleccionar las estaciones
+    #Select the stations
     cursor.execute(query)
     for ( Name) in cursor:
         vName.append(Name)
@@ -67,7 +69,7 @@ else:
     cnx.close()
 
     
-
+# Path where data is going to be saved
 PATH='/home/luis/Documentos/UNAM/CuartoSemestre/ComputoDistribuido/Measurement-of-pollutants-and-air-quality/'
 
 fig, ax = plt.subplots()
